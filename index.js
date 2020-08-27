@@ -121,6 +121,13 @@ function manifest(options) {
       contents.push('# hash: ' + hasher.digest("hex"));
     }
 
+    // output origin trial to cache manifiest
+    if (options.origintrial) {
+      contents.push('');
+      contents.push('ORIGIN-TRIAL:');
+      contents.push(options.origintrial);
+    }
+
     var manifestFile = new gutil.File({
       cwd: cwd,
       base: cwd,
