@@ -125,7 +125,7 @@ function manifest(options) {
     if (options.originTrial) {
       contents.push('');
       contents.push('ORIGIN-TRIAL:');
-      contents.push(options.origintrial);
+      contents.push(options.originTrial);
     }
 
     var manifestFile = new gutil.File({
