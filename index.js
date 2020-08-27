@@ -122,7 +122,7 @@ function manifest(options) {
     }
 
     // output origin trial to cache manifiest
-    if (options.origintrial) {
+    if (options.originTrial) {
       contents.push('');
       contents.push('ORIGIN-TRIAL:');
       contents.push(options.origintrial);

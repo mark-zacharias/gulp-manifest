@@ -91,6 +91,14 @@ Adds a sha256 hash of all `src` files (actual contents) as a comment.
 
 This will ensure that application cache invalidates whenever actual file contents change (it's recommented to set `timestamp` to `false` when `hash` is used).
 
+
+#### options.hash
+Type: `String`
+Default: `''`
+
+Adds a Origin-Trial field as per https://web.dev/appcache-removal/
+
+
 ### Usage Example
 
 
